@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.box{    
+    width: 100vw;
+    height: 100vh; 
+    background-image: linear-gradient(to left top, #1b0f3d, #271b45, #32274e, #3e3456, #49415e);
+}
+.conteudo{
+    width: 50vw;
+    height: 100vh;
+    margin: 0 auto;
+    background-color: rgb(68, 58, 158);
+}
+.menu img{
+    width: 50vw;
+    height: 40vh;
+}
+#dataAtual{
+   display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 150%;
+    color: #fff;
+    position: relative;
+    top: -50px;
+    
+   
+
+
+}
+.content{ 
+    width: 50vw;
+    height: 50vh;
+    margin: 0 auto;
+    overflow-y: auto;
+}
+.todos{
+    display: flex;    
+    justify-content: space-between;
+    padding: 10px;
+    background: #fff;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 12px;
+    border-radius: 8px;
+}
+.concluir{
+    color:#209e20;
+    cursor: pointer;
+}
+.completed{
+    color: rgb(58, 58, 58);
+    background: rgb(151, 151, 151)!important;
+    font-style: italic;
+   
+}
+.excluir{
+    color: #dd0000;
+    cursor: pointer;
+}
+#insert{
+    margin-top: 5px;
+    padding: 5px;
+    width: 45vw;
+    margin: 0 auto;   
+}
+#insert input{
+    width: 75%;
+    padding: 10px;
+    border: none;
+    border-radius: 15px;
+    background: #fff;
+    outline: 0;
+    color: #000;
+    font-size: 17px;
+    font-weight: 600;    
+}
+#insert button{
+    width: 20%;
+    padding: 10px;
+    cursor: pointer;
+    background: rgb(61, 89, 248);
+    color: #fff;
+    border-radius: 10px;
+    border: none;   
+}
+#insert button:hover{
+    background: rgb(40, 59, 163);
+    color: #fff;    
+}
+
+/*responsividade mobile */
+
+@media screen and (max-width: 530px){
+    .box{    
+        width: 100vw;
+        height: 100vh; 
+        background: #fff;
+    }
+    .conteudo{
+        width: 100vw;       
+    }
+    .menu{        
+        height: 200px;
+    }
+    .menu img{
+        width: 100%;      
+    }
+    .content{
+            padding-top: 10px; 
+            width: 100vw;
+            margin: 0 auto;
+            overflow-y: auto;
+            background-color: rgb(68, 58, 158);
+            margin-top: 100px;
+            
+    }
+    
+    .todos{
+        display: flex;    
+        justify-content: space-between;
+        padding: 10px;
+        background: rgba(224, 223, 223, 0.986);
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 10px;
+    }
+    .concluir{
+        color:#209e20;
+    }
+    .excluir{
+        color: #dd0000;
+    }
+    #insert{     
+        position: absolute;
+        top: 0;
+
+        width: 95%;
+        margin-top: 5px;
+               
+    }
+    #insert input{
+        width: 70%;
+        padding: 10px;
+        border: none;
+        border-radius: 15px;
+    }
+    #insert button{
+        width: 25%;
+        padding: 10px;
+        margin-left: 5px; 
+    }
+    #insert button:hover{
+        background: rgb(40, 59, 163);
+        color: #fff;
+    }
+}
